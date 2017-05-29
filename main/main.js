@@ -2,24 +2,8 @@ const loadAllItems = require('./loadAllItems.js');
 Item = require('./item.js');
 Order = require('./order.js')
 
-module.exports = function main() {
+module.exports = function main(input) {
     //console.log("Debug Info");
-    return printInventory;
-};
-/**
-inputs = [
-            'ITEM000000',
-            'ITEM000000',
-            'ITEM000000',
-            'ITEM000000',
-            'ITEM000000',
-            'ITEM000001',
-            'ITEM000001',
-            'ITEM000004'
-        ];
-*/
-function printInventory(input){
-
 	var _order = new Array(6);
 	_order[0] = new Item("ITEM000000",'可口可乐','瓶',3.00,0);
 	_order[1] = new Item('ITEM000001','雪碧','瓶',3.00,0);
@@ -39,4 +23,17 @@ function printInventory(input){
 		}
 	}
 	return cart.printOrder();
-}
+};
+/**
+inputs = [
+            'ITEM000000',
+            'ITEM000000',
+            'ITEM000000',
+            'ITEM000000',
+            'ITEM000000',
+            'ITEM000001',
+            'ITEM000001',
+            'ITEM000004'
+        ];
+*/
+
