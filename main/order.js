@@ -59,15 +59,15 @@ Order.prototype.getOrder = function(){
 	return this.order;
 }
 Order.prototype.printOrder = function(){
-	var orderDescribe = `***<没钱赚商店>购物清单***\n`;
+	var orderDescribe = '***<没钱赚商店>购物清单***\n';
 	for(var x= 0;x < this.order.length;x++){
 		if(this.order[x].getSubTotal() > 0){
 			orderDescribe += this.order[x].printItem();
 		}
 	}
-	orderDescribe += `----------------------\n`;
-	orderDescribe +=`总计：'+this.getTotalpirce()+'(元)\n`;
-	orderDescribe += `**********************`;
+	orderDescribe += '----------------------\n';
+	orderDescribe +='总计：'+this.getTotalpirce()+'(元)\n';
+	orderDescribe += '**********************';
 	return orderDescribe;
 }
 	
