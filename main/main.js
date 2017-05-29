@@ -1,8 +1,6 @@
 const loadAllItems = require('./loadAllItems.js');
-//Item = require('./item.js');
-//Order = require('./order.js')
-import Item from './Item';
-import Order from './Order';
+Item = require('./item.js');
+Order = require('./order.js')
 
 module.exports = function main() {
     //console.log("Debug Info");
