@@ -1,4 +1,4 @@
-module.exports = printInventory
+﻿module.exports = printInventory
 
 const loadAllItems = require('./loadAllItems.js');
 Item = require('./item.js');

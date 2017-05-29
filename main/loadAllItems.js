@@ -1,4 +1,4 @@
-module.exports = function loadAllItems() {
+﻿module.exports = function loadAllItems() {
     return [
         {
             barcode: 'ITEM000000',

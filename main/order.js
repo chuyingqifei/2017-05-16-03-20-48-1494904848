@@ -1,4 +1,4 @@
-module.exports = Order
+ï»¿module.exports = Order
 Item = require('./item.js');
 /**
 class Order{
@@ -7,12 +7,12 @@ class Order{
 		this.order = order;
 		
 		this.order = new Array(6);
-		this.order[0] = new Item("ITEM000000",'¿É¿Ú¿ÉÀÖ','Æ¿',3.00,0);
-		this.order[1] = new Item('ITEM000001','Ñ©±Ì','Æ¿',3.00,0);
-		this.order[2] = new Item('ITEM000002','Æ»¹û','½ï',5.50,0);
-		this.order[3] = new Item('ITEM000003','ÀóÖ¦','½ï',15.00,0);
-		this.order[4] = new Item('ITEM000004','µç³Ø','¸ö',2.00,0);
-		this.order[5] = new Item('ITEM000005','·½±ãÃæ','´ü',4.50,0);
+		this.order[0] = new Item("ITEM000000",'å¯å£å¯ä¹','ç“¶',3.00,0);
+		this.order[1] = new Item('ITEM000001','é›ªç¢§','ç“¶',3.00,0);
+		this.order[2] = new Item('ITEM000002','è‹¹æœ','æ–¤',5.50,0);
+		this.order[3] = new Item('ITEM000003','è”æ','æ–¤',15.00,0);
+		this.order[4] = new Item('ITEM000004','ç”µæ± ','ä¸ª',2.00,0);
+		this.order[5] = new Item('ITEM000005','æ–¹ä¾¿é¢','è¢‹',4.50,0);
 		
 		this.totalPrice = 0;
 	}
@@ -29,14 +29,14 @@ class Order{
 		return this.order;
 	}
 	printOrder(){
-		var orderDescribe = '***<Ã»Ç®×¬ÉÌµê>¹ºÎïÇåµ¥***\n';
+		var orderDescribe = '***<æ²¡é’±èµšå•†åº—>è´­ç‰©æ¸…å•***\n';
 		for(var x= 0;x < this.order.length;x++){
 			if(this.order[x].getSubTotal() > 0){
 				orderDescribe += this.order[x].printItem();
 			}
 		}
 		orderDescribe += '----------------------\n';
-		orderDescribe +='×Ü¼Æ£º'+this.getTotalpirce()+'(Ôª)\n';
+		orderDescribe +='æ€»è®¡ï¼š'+this.getTotalpirce()+'(å…ƒ)\n';
 		orderDescribe += '**********************\n';
 		return orderDescribe;
 	}
@@ -59,14 +59,14 @@ Order.prototype.getOrder = function(){
 	return this.order;
 }
 Order.prototype.printOrder = function(){
-	var orderDescribe = '***<Ã»Ç®×¬ÉÌµê>¹ºÎïÇåµ¥***\n';
+	var orderDescribe = '***<æ²¡é’±èµšå•†åº—>è´­ç‰©æ¸…å•***\n';
 	for(var x= 0;x < this.order.length;x++){
 		if(this.order[x].getSubTotal() > 0){
 			orderDescribe += this.order[x].printItem();
 		}
 	}
 	orderDescribe += '----------------------\n';
-	orderDescribe +='×Ü¼Æ£º'+this.getTotalpirce()+'(Ôª)\n';
+	orderDescribe +='æ€»è®¡ï¼š'+this.getTotalpirce()+'(å…ƒ)\n';
 	orderDescribe += '**********************';
 	return orderDescribe;
 }
