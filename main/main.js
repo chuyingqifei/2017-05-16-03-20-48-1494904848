@@ -1,11 +1,12 @@
-﻿const loadAllItems = require('./loadAllItems.js');
+﻿module.exports=printInventory;
+
+const loadAllItems = require('./loadAllItems.js');
 Item = require('./item.js');
 Order = require('./order.js')
 
-
-module.exports = function main(){
-    //console.log("Debug Info");
-	return printInventory;
+function main(){
+    console.log("Debug Info");
+	//return printInventory;
 };
 /**
 inputs = [
