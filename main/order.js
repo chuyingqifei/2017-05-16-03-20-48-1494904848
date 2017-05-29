@@ -1,6 +1,7 @@
-module.export = Order;
-Item = require('./item.js');
-class Order{
+//module.export = Order;
+//Item = require('./item.js');
+import Item form './Item'
+export default class Order{
 	constructor(order){
 
 		this.order = order;

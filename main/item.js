@@ -1,5 +1,5 @@
-module.export = Item;
-class Item{
+//module.export = Item;
+export default class Item{
 	constructor(barcode,name,unit,price,num){
 		this.barcode = barcode;
 		this.name = name;
