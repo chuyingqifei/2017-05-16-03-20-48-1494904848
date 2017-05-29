@@ -1,4 +1,4 @@
-const printInventory = require('../main/main');
+const main = require('../main/main');
 
 describe('pos', () => {
     var inputs;
@@ -19,7 +19,7 @@ describe('pos', () => {
     it('should print correct text', () => {
 
 
-        let actualText =printInventory(inputs);
+        let actualText =main.printInventory(inputs);
 
         var expectText =
             '***<没钱赚商店>购物清单***\n' +
