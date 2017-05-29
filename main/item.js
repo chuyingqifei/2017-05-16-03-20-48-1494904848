@@ -8,22 +8,22 @@ class Item{
 		this.num = num;
 		this.subTotal = num * price;
 	}
-	getBarcode = function(){
+	getBarcode(){
 		return this.barcode;
 	}
-	getName = function(){
+	getName(){
 		return this.name;
 	}
-	getUnit = function(){
+	getUnit(){
 		return this.unit;
 	}
-	getPrice = function(){
+	getPrice(){
 		return this.price;
 	}
-	getSubTotal = function(){
+	getSubTotal(){
 		return (this.num * this.price).toFixed(2);
 	}
-	printItem = function(){
+	printItem(){
 		return "名称："+this.name+",数量："+this.num+this.unit+"，单价："+this.price+"(元)，小计："+this.subTotal+"(元)\n";
 	}
 }
