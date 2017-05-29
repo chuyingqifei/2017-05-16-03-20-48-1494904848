@@ -1,4 +1,4 @@
-﻿module.exports=main;
+﻿module.exports=sb;
 const loadAllItems = require('./loadAllItems.js');
 Item = require('./item.js');
 Order = require('./order.js');
