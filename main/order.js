@@ -47,12 +47,12 @@ function Order(order){
 	this.totalPrice = 0;
 }
 Order.prototype.getTotalpirce = function(){
-	var sum = 0;
+	var sum = 0.00;
 	for(var x= 0;x < this.order.length;x++){
-		sum += this.order[x].getSubTotal();
+		sum += parseFloat(this.order[x].getSubTotal());
 	}
 	this.totalPrice = sum;
-	return this.totalPrice;
+	return (this.totalPrice).toFixed(2);
 }
 
 Order.prototype.getOrder = function(){

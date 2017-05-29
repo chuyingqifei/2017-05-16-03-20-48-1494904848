@@ -53,6 +53,6 @@ Item.prototype.getPrice = function(){
 Item.prototype.getSubTotal = function(){
 	return (this.num * this.price).toFixed(2);
 }
-Item.prototypeprintItem = function(){
+Item.prototype.printItem = function(){
 	return "名称："+this.name+",数量："+this.num+this.unit+"，单价："+this.price+"(元)，小计："+this.subTotal+"(元)\n";
 }
