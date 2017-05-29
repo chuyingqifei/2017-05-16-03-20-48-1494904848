@@ -1,4 +1,4 @@
-module.export = Item;
+module.exports = Item
 /**
 class Item{
 	constructor(barcode,name,unit,price,num){

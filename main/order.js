@@ -1,4 +1,4 @@
-module.export = Order;
+module.exports = Order
 Item = require('./item.js');
 /**
 class Order{
