@@ -67,7 +67,7 @@ Order.prototype.printOrder = function(){
 	}
 	orderDescribe += '----------------------\n';
 	orderDescribe +='×Ü¼Æ£º'+this.getTotalpirce()+'(Ôª)\n';
-	orderDescribe += '**********************\n';
+	orderDescribe += '**********************';
 	return orderDescribe;
 }
 	
