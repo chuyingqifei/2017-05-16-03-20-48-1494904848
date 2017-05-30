@@ -1,12 +1,8 @@
-﻿module.exports=main;
-const loadAllItems = require('./loadAllItems.js');
-Item = require('./item.js');
-Order = require('./order.js');
+﻿module.exports=printInventory;
+const loadAllItems = require('./loadAllItems');
+Item = require('./item');
+Order = require('./order');
 
-function main(){
-    console.log("Debug Info");
-	return "hello,world";
-};
 /**
 inputs = [
             'ITEM000000',
