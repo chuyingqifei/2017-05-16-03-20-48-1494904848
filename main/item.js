@@ -25,7 +25,7 @@ class Item{
 		return (this.num * this.price).toFixed(2);
 	}
 	printItem(){
-		return "Ãû³Æ£º"+this.name+",ÊıÁ¿£º"+this.num+this.unit+"£¬µ¥¼Û£º"+this.price+"(Ôª)£¬Ğ¡¼Æ£º"+this.subTotal+"(Ôª)\n";
+		return "åç§°ï¼š"+this.name+",æ•°é‡ï¼š"+this.num+this.unit+"ï¼Œå•ä»·ï¼š"+this.price+"(å…ƒ)ï¼Œå°è®¡ï¼š"+this.getSubTotal()+"(å…ƒ)\n";
 	}
 }
 */
@@ -54,5 +54,5 @@ Item.prototype.getSubTotal = function(){
 	return (this.num * this.price).toFixed(2);
 }
 Item.prototype.printItem = function(){
-	return 'Ãû³Æ£º'+this.name+'£¬ÊıÁ¿£º'+this.num+this.unit+'£¬µ¥¼Û£º'+this.price.toFixed(2)+'(Ôª)£¬Ğ¡¼Æ£º'+this.getSubTotal()+'(Ôª)\n';
+	return 'åç§°ï¼š'+this.name+'ï¼Œæ•°é‡ï¼š'+this.num+this.unit+'ï¼Œå•ä»·ï¼š'+this.price.toFixed(2)+'(å…ƒ)ï¼Œå°è®¡ï¼š'+this.getSubTotal()+'(å…ƒ)\n';
 }
