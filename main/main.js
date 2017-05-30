@@ -1,7 +1,7 @@
 ﻿module.exports=printInventory;
-const loadAllItems = require('./loadAllItems');
-Item = require('./item');
-Order = require('./order');
+const loadAllItems = require('./loadAllItems.js');
+Item = require('./item.js');
+Order = require('./order.js');
 
 /**
 inputs = [
@@ -15,6 +15,10 @@ inputs = [
             'ITEM000004'
         ];
 */
+function main(){
+      	console.log("sb");
+	return "hello,world";
+}
 
 function printInventory(input){
 	var _order = new Array(6);

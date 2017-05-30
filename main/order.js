@@ -1,5 +1,5 @@
 ﻿module.exports = Order
-Item = require('./item');
+Item = require('./item.js');
 /**
 class Order{
 	constructor(order){
